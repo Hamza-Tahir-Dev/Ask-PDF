@@ -10,14 +10,15 @@ const FileUpload = (props : Props) => {
         accept: { "application/pdf": [".pdf"] },
         maxFiles: 1,
         onDrop: async (acceptedFiles) => {
-            console.log(acceptedFiles)
-            const file = acceptedFiles[0];
-            if (file.size > 10 * 1024 * 1024) {
-              // bigger than 10mb!
-              toast.error("File too large");
-              return;
+          console.log(acceptedFiles);
+          const file = acceptedFiles[0]
+          if (file.size > 10 * 1024 * 1024) {
+            alert('please upload a smaller file')
+            return
+          }
         },
-    })
+    });
+          
     return (
         <div className="p-2 bg-white rounded-xl">
             <div {...getRootProps(
@@ -31,9 +32,7 @@ const FileUpload = (props : Props) => {
                 <p className="mt-2 text-sm text-slate-400">Drop Pdf Here</p>
                 </>
             </div>
-
         </div>
     );
 }
-
 export default FileUpload
