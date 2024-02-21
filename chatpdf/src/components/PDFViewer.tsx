@@ -1,4 +1,6 @@
 import React from "react";
+import FileUpload from "./FileUpload";
+
 
 type Props = { pdf_url: string };
 

@@ -2,7 +2,8 @@
 
 import React from "react";
 import { Button } from "./ui/button";
-import { PlusCircle, FileText, MessageCircleMore } from "lucide-react";
+import { PlusCircle, FileText, MessageCircleMore, Inbox } from "lucide-react";
+import FileUpload from "./FileUpload";
 
 type Props = {}
 
@@ -51,21 +52,17 @@ const ChatSideBar = (props : Props) => {
                 <MessageCircleMore className="mr-2 w-4 h-4" />
                 PDF Uploaded
             </Button>
-            <Button className="w-full border-dashed border-white border gap-2">
-                <MessageCircleMore className="mr-2 w-4 h-4" />
-                PDF Uploaded
-            </Button>
-            <Button className="w-full border-dashed border-white border gap-2">
-                <MessageCircleMore className="mr-2 w-4 h-4" />
-                PDF Uploaded
-            </Button>
-            </div>
-            <Button className="w-full border-dotted border-white border mt-[-30px]">
-                <FileText className="mr-2 w-4 h-4" />
-                Upload PDF 
-            </Button>
             
-        </div>    
+            </div>
+            <div className="mt-[-10px] p-2 bg-white rounded-xl">
+                 
+                  <FileUpload/>
+                </div>
+                
+            </div>
+            
+            
+          
     );
 }
 export default ChatSideBar
