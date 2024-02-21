@@ -10,7 +10,7 @@ const ChatSideBar = (props : Props) => {
           
     return (
         <div className="w-full h-screen p-6 text-gray-200 bg-gray-900">
-            <Button className="w-full border-solid border-white border">
+            <Button className="w-full font-bold text-lg">
                 <FileText className="mr-2 w-4 h-4" />
                 Chat PDF
             </Button>
@@ -64,6 +64,7 @@ const ChatSideBar = (props : Props) => {
                 <FileText className="mr-2 w-4 h-4" />
                 Upload PDF 
             </Button>
+            
         </div>    
     );
 }
