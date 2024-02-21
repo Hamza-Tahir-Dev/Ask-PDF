@@ -10,8 +10,8 @@ const FileUpload = (props : Props) => {
         accept: { "application/pdf": [".pdf"] },
         maxFiles: 1,
         onDrop: async (acceptedFiles) => {
-       console.log(acceptedFiles);
-          
+        console.log(acceptedFiles);
+        const file = acceptedFiles[0]
         },
     });
           
