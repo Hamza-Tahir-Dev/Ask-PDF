@@ -3,7 +3,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { PlusCircle, FileText, MessageCircleMore, Inbox } from "lucide-react";
-import FileUpload from "./FileUpload";
+import  FileUpload  from "./FileUpload"
 
 type Props = {}
 
@@ -56,7 +56,7 @@ const ChatSideBar = (props : Props) => {
             </div>
             <div className="mt-[-10px] p-2 bg-white rounded-xl">
                  
-                  <FileUpload/>
+                 <FileUpload/>
                 </div>
                 
             </div>

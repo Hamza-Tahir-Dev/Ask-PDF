@@ -1,9 +1,9 @@
-'use client'
 
 import React from "react";
 import ChatSideBar from "./ChatSideBar";
-import PDFViewer from "./PDFViewer";
+import PDFViewer from "./PDFViewer"
 import ChatComponent from "./ChatComponent";
+
 
 type Props = {}
 
