@@ -12,7 +12,7 @@ function FileUpload(props) {
   ));
 
   return (
-    <section className="container mx-auto p-6">
+    <section className="mt-[-10px] p-2 bg-white rounded-xl">
       <div {...getRootProps({ className: 'dropzone border-dashed border-2 p-4 sm:w-1/5 md:w-1/6 lg:w-1/20' })}>
         <input {...getInputProps()} />
         <p className="text-gray-600">Drag 'n' drop some files here, or click to select files</p>
